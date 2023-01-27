@@ -13,9 +13,9 @@ export default function Home() {
       <main>
         <div className="relative w-full min-h-screen">
           <div className=" absolute top-1/2 -translate-y-1/2 mx-10 px-8 py-6">
-            <p className="mb-6 text-sm">Longer-lasting produce.</p>
+            <p className="mb-6 text-sm text-offWhite">Longer-lasting produce.</p>
             <div>
-              <h1 className=" mb-6 w-4/6 leading-14 text-5xl font-bold tracking-tighter">
+              <h1 className=" mb-6 w-4/6 leading-14 text-offWhite text-5xl font-bold tracking-tighter">
                 Plant-based protection<br/> that helps the produce you love stay
                 fresh for longer.
               </h1>
