@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "@/components/Navbar";
+import MyImages from "@/components/MyImages";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="relative w-full  min-h-screen">
+        <div className="relative w-full min-h-screen">
           <div className=" absolute top-1/2 -translate-y-1/2 mx-10 px-8 py-6">
             <p className="mb-6 text-sm">Longer-lasting produce.</p>
             <div>
@@ -24,6 +24,7 @@ export default function Home() {
               Find Apeel
             </button>
           </div>
+          <MyImages />
         </div>
       </main>
     </div>
