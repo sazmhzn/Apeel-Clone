@@ -13,6 +13,8 @@ module.exports = {
       colors: {
         "offWhite": "#faf3e6", 
         "my-green": "#154726", 
+        "banana": "#fce8bd",
+        "banana-400": "#ffd550"
       },
     },
   },
