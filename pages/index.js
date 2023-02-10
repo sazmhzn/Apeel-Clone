@@ -1,6 +1,7 @@
 import Head from "next/head";
 import MyImages from "@/components/MyImages";
 import Overlap from "@/components/Infobar"
+import Image from "../public/imagesd";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
         </div>
         <Overlap />
         <div>
+
+          <img src="@/images" alt="" />
           
         </div>
       </main>
