@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "images/svg/facebook.svg"
 
 export default function Navbar() {
   return (
@@ -15,6 +16,8 @@ export default function Navbar() {
             <li>Retail</li>
           </Link>
         </ul>
+
+        <img src={Logo} alt="Your SVG" />
 
         <ul className="flex gap-12">
           <Link href={"/"}>
