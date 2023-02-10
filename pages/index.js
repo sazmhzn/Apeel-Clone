@@ -28,6 +28,9 @@ export default function Home() {
           <MyImages />
         </div>
         <Overlap />
+        <div>
+          
+        </div>
       </main>
     </div>
   );
