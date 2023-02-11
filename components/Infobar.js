@@ -11,7 +11,6 @@ export default function Infobar() {
 
         <div className="flex-1 flex flex-col justify-between">
           <p className="w-36">It started with a simple question.</p>
-
           <h1 className="text-5xl w-100 font-extrabold">
             Why do some fruits <br /> and vegetables last longer than
             <br /> others?

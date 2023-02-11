@@ -2,7 +2,7 @@ import Head from "next/head";
 import MyImages from "@/components/MyImages";
 import Overlap from "@/components/Infobar";
 import bgImage from "images/filters_quality(85).webp";
-
+import lemonImage from "images/filters_lemon(85).webp";
 
 export default function Home() {
   return (
@@ -16,26 +16,50 @@ export default function Home() {
       <main>
         <div className="relative w-full min-h-screen">
           <div className=" absolute bottom-6 -translate-y-1/2 mx-10 px-8 py-6">
-            <p className="mb-6 text-sm text-offWhite">Longer-lasting produce.</p>
+            <p className="mb-6 text-sm text-offWhite">
+              Longer-lasting produce.
+            </p>
             <div>
               <h1 className=" mb-6 w-4/6 leading-14 text-offWhite text-5xl font-bold tracking-tighter">
-                Plant-based protection<br/> that helps the produce you love stay
-                fresh for longer.
+                Plant-based protection
+                <br /> that helps the produce you love stay fresh for longer.
               </h1>
             </div>
             <button className="px-6 py-3 rounded-3xl bg-offWhite">
               Find Apeel
             </button>
           </div>
-          
-          <MyImages src={bgImage} width={'100%'} className={'absolute -top-20 -z-10 w-full min-h-full'} />
-        </div>
-        
-        <Overlap />
-        <div>
-        <MyImages src={bgImage} width={'100%'} />
 
-          
+          <MyImages
+            src={bgImage}
+            width={"100%"}
+            className={"absolute -top-20 -z-10 w-full min-h-full"}
+          />
+        </div>
+
+        {/* The yellow floting section */}
+        <Overlap />
+
+        <div className="relative w-full min-h-screen">
+          <div className=" absolute bottom-6 -translate-y-1/2 mx-10 px-8 py-6">
+            <p className="mb-6 text-sm text-offWhite">
+              Longer-lasting produce.
+            </p>
+            <div>
+              <h1 className=" mb-6 w-4/6 leading-14 text-offWhite text-5xl font-bold tracking-tighter">
+                Plant-based protection
+                <br /> that helps the produce you love stay fresh for longer.
+              </h1>
+            </div>
+            <button className="px-6 py-3 rounded-3xl bg-offWhite">
+              Find Apeel
+            </button>
+          </div>
+          <MyImages
+            src={lemonImage}
+            width={"100%"}
+            className={"absolute -top-10 -z-10 w-full bg-red-50 min-h-full"}
+          />
         </div>
       </main>
     </div>
