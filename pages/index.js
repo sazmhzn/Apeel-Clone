@@ -1,7 +1,9 @@
 import Head from "next/head";
 import MyImages from "@/components/MyImages";
 import Overlap from "@/components/Infobar"
-import Image from "../public/imagesd";
+// import Image from "@images";
+// import { getImageUrl } from '@/components/images'
+import background from "filters_quality(85).webp"
 
 export default function Home() {
   return (
@@ -26,12 +28,11 @@ export default function Home() {
               Find Apeel
             </button>
           </div>
-          <MyImages />
+          <MyImages src={background} />
         </div>
         <Overlap />
         <div>
 
-          <img src="@/images" alt="" />
           
         </div>
       </main>
