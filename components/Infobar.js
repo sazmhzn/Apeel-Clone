@@ -1,8 +1,14 @@
+import Image from "next/image";
+import svg5 from "images/svg/svgexport-5.svg"
+import MyImage from "@/components/MyImages"
+import videoImage from "images/video-background.webp";
+
 export default function Infobar() {
   return (
-    <div className="m-12 p-12 bg-banana text-my-green w-100 min-h-screen rounded-2xl">
-    
-      <div className="py-6 h-screen flex justify-between gap-10">
+    <div className="relative mx-auto p-12 bg-banana text-my-green w-[90vw] min-h-screen rounded-2xl overflow-hidden">
+      <Image className="absolute left-0 top-0 -z-0" src={svg5} width={'100%'} height={"100vh"} />
+      <div className="relative py-6 h-screen flex justify-between gap-10 z-10">
+
         <div className="flex-1 flex flex-col justify-between">
           <p className="w-36">It started with a simple question.</p>
 
@@ -11,7 +17,8 @@ export default function Infobar() {
             <br /> others?
           </h1>
         </div>
-        <div className="flex-1 rounded-xl flex items-center justify-center">
+        <div className="relative flex-1 rounded-xl flex items-center justify-center overflow-hidden">
+          <Image className="absolute -z-10 object-cover" fill src={videoImage} />
           <button className="bg-banana-400 px-8 py-3 rounded-full">
             watch
           </button>

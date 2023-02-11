@@ -6,7 +6,7 @@ export default function MyImage(props) {
   };
   console.log(url);
   return (
-    <div className="absolute -top-20 -z-10 w-full min-h-full">
+    <div className={props.className}>
       <Image src={props.src}
         width={props.width}
         height={'100%'}
@@ -14,6 +14,7 @@ export default function MyImage(props) {
       sizes="(max-width: 768px) 70vw,
               (max-width: 1200px) 50vw,
               33vw" 
+              quality={100}
               />
     </div>
   );

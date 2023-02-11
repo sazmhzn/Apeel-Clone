@@ -3,6 +3,7 @@ import MyImages from "@/components/MyImages";
 import Overlap from "@/components/Infobar";
 import bgImage from "images/filters_quality(85).webp";
 
+
 export default function Home() {
   return (
     <div>
@@ -27,10 +28,12 @@ export default function Home() {
             </button>
           </div>
           
-          <MyImages src={bgImage} width={'100%'} />
+          <MyImages src={bgImage} width={'100%'} className={'absolute -top-20 -z-10 w-full min-h-full'} />
         </div>
+        
         <Overlap />
         <div>
+        <MyImages src={bgImage} width={'100%'} />
 
           
         </div>
