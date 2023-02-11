@@ -1,9 +1,7 @@
 import Head from "next/head";
 import MyImages from "@/components/MyImages";
-import Overlap from "@/components/Infobar"
-// import Image from "@images";
-// import { getImageUrl } from '@/components/images'
-import background from "filters_quality(85).webp"
+import Overlap from "@/components/Infobar";
+import Image from "images/background.jpg";
 
 export default function Home() {
   return (
@@ -15,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+      <img src={Image} alt="hello" />
         <div className="relative w-full min-h-screen">
           <div className=" absolute bottom-6 -translate-y-1/2 mx-10 px-8 py-6">
             <p className="mb-6 text-sm text-offWhite">Longer-lasting produce.</p>
@@ -28,7 +27,8 @@ export default function Home() {
               Find Apeel
             </button>
           </div>
-          <MyImages src={background} />
+          
+          <MyImages src={Image} />
         </div>
         <Overlap />
         <div>
