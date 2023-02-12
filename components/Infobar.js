@@ -5,7 +5,7 @@ import videoImage from "images/video-background.webp";
 
 export default function Infobar() {
   return (
-    <div className="relative mx-auto p-12 bg-banana text-my-green sm:w-[90vw] lg:w-full min-h-screen rounded-2xl overflow-hidden">
+    <div className=" relative mx-auto p-12 bg-banana text-my-green sm:w-[90vw] lg:w-full min-h-screen rounded-2xl overflow-hidden">
       <Image className="absolute left-0 top-0 -z-0" src={svg5} width={'100%'} height={"100vh"} />
       <div className="relative py-6 h-screen flex justify-between gap-10 z-10">
 

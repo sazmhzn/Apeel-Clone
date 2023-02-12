@@ -1,21 +1,28 @@
 import Image from "next/image";
 
 export default function MyImage(props) {
-  const url = {
-    src: props.src,
-  };
-  console.log(url);
+
+  const { src, width, className } = props;
+
+
   return (
-    <div className={props.className}>
-      <Image src={props.src}
-        width={props.width}
-        height={'100%'}
-      alt="backgruond"
-      sizes="(max-width: 768px) 70vw,
-              (max-width: 1200px) 50vw,
-              33vw" 
-              quality={100}
-              />
+    <div className={className}>
+      {/* this is conditional rendering. If width is given then this will run */}
+      {width && <Image
+        src={src}
+        width={width}
+        height={"100%"}
+        alt="backgruond"
+        quality={100}
+      />}
+      <Image
+        src={src}
+        fill
+        alt="backgruond"
+        quality={100}
+        className={className}
+      />
+      
     </div>
   );
 }

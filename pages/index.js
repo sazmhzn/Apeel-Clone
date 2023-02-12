@@ -1,6 +1,7 @@
 import Head from "next/head";
 import MyImages from "@/components/MyImages";
 import Overlap from "@/components/Infobar";
+import Image from "next/image";
 import bgImage from "images/filters_quality(85).webp";
 import lemonImage from "images/filters_lemon(85).webp";
 
@@ -40,17 +41,26 @@ export default function Home() {
         {/* The yellow floting section */}
         <Overlap />
 
-        <div className="relative bg-black w-full min-h-screen">
-          <div className=" absolute bottom-6 -translate-y-1/2 mx-10 px-8 py-6">
-          <MyImages
-              src={lemonImage}
-              width={"100vw"}
-              className={
-                "absolute -top-20 left-10 -z-10 w-full bg-red-50 min-h-full"
-              }
-            />
+        <div className="relative bg-slate-800 w-full min-h-screen">
+          <MyImages src={lemonImage} fill className={"object-cover"} />
+
+          <div className="w-[100%] min-h-screen px-8 py-6 absolute flex lg:flex-row sm:flex-col">
+            <div className="flex-1">
+              <h1 className=" mb-0 w-full leading-14 text-offWhite text-7xl font-bold tracking-tighter">
+                This Peel is
+                <br /> Powerful
+              </h1>
+            </div>
+            <div className="flex-1 flex items-end justify-end">
+              <p className="w-1/2 text-justify text-md leading-5 font-semibold text-offWhite">
+                Apeel keeps moisture inside the produce adn 
+              oxygen out, dramatically slowing the rate that
+              produce spoils. because we use edible plant-
+              based materials, we call it food protecting your food.
+              </p>
+              
+            </div>
           </div>
-          
         </div>
       </main>
     </div>
