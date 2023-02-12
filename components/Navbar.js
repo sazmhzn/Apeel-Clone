@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className="w-100">
       <nav className=" mx-16 px-8 py-6 rounded-b-xl bg-offWhite flex justify-between items-center font-bold text-my-green text-xs">
-        <ul className="flex gap-12">
+        <ul className="lg:flex sm:hidden gap-12">
           <Link href={"/"}>
             <li>How Apeel Works</li>
           </Link>
@@ -18,7 +18,7 @@ export default function Navbar() {
 
         {/* <img src={Logo} alt="Your SVG" /> */}
 
-        <ul className="flex gap-12">
+        <ul className="lg:flex gap-12 sm:hidden">
           <Link href={"/"}>
             <li>Careers</li>
           </Link>

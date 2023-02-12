@@ -40,26 +40,17 @@ export default function Home() {
         {/* The yellow floting section */}
         <Overlap />
 
-        <div className="relative w-full min-h-screen">
+        <div className="relative bg-black w-full min-h-screen">
           <div className=" absolute bottom-6 -translate-y-1/2 mx-10 px-8 py-6">
-            <p className="mb-6 text-sm text-offWhite">
-              Longer-lasting produce.
-            </p>
-            <div>
-              <h1 className=" mb-6 w-4/6 leading-14 text-offWhite text-5xl font-bold tracking-tighter">
-                Plant-based protection
-                <br /> that helps the produce you love stay fresh for longer.
-              </h1>
-            </div>
-            <button className="px-6 py-3 rounded-3xl bg-offWhite">
-              Find Apeel
-            </button>
-          </div>
           <MyImages
-            src={lemonImage}
-            width={"100%"}
-            className={"absolute -top-10 -z-10 w-full bg-red-50 min-h-full"}
-          />
+              src={lemonImage}
+              width={"100vw"}
+              className={
+                "absolute -top-20 left-10 -z-10 w-full bg-red-50 min-h-full"
+              }
+            />
+          </div>
+          
         </div>
       </main>
     </div>
