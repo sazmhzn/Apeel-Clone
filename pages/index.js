@@ -2,8 +2,10 @@ import Head from "next/head";
 import MyImages from "@/components/MyImages";
 import Overlap from "@/components/Infobar";
 import Image from "next/image";
+import Link from "next/link";
 import bgImage from "images/filters_quality(85).webp";
 import lemonImage from "images/filters_lemon(85).webp";
+import svgLeft from "images/svg/svgexport-8.svg"
 
 export default function Home() {
   return (
@@ -51,14 +53,23 @@ export default function Home() {
                 <br /> Powerful
               </h1>
             </div>
-            <div className="flex-1 flex items-end justify-end">
-              <p className="w-1/2 text-justify text-md leading-5 font-semibold text-offWhite">
-                Apeel keeps moisture inside the produce adn 
-              oxygen out, dramatically slowing the rate that
-              produce spoils. because we use edible plant-
-              based materials, we call it food protecting your food.
-              </p>
-              
+            <div className="flex-1 flex items-end justify-end ">
+              <div className="flex flex-col justify-end items-end ">
+
+                <p className="w-1/2 mb-2 text-justify text-md leading-5 font-semibold text-offWhite">
+                  Apeel keeps moisture inside the produce adn oxygen out,
+                  dramatically slowing the rate that produce spoils. because we
+                  use edible plant- based materials, we call it food protecting
+                  your food.
+                </p>
+
+                <Link
+                  href="/index"
+                  className="w-1/2 flex items-center text-sm text-left leading-5 font-semibold text-offWhite"
+                >
+                  <p>How Apeel Works</p> <Image src={svgLeft} width={30}/>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
