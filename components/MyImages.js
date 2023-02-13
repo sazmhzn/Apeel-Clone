@@ -14,7 +14,8 @@ export default function MyImage(props) {
         height={"100%"}
         alt="backgruond"
         quality={100}
-      />}
+
+/>}
       <Image
         src={src}
         fill

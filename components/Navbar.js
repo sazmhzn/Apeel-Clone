@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "images/svg/svgexport-1.svg"
 
 export default function Navbar() {
   return (
@@ -17,6 +19,8 @@ export default function Navbar() {
         </ul>
 
         {/* <img src={Logo} alt="Your SVG" /> */}
+        <Image src={logo}/>
+
 
         <ul className="lg:flex gap-12 sm:hidden">
           <Link href={"/"}>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import bgImage from "images/filters_quality(85).webp";
 import lemonImage from "images/filters_lemon(85).webp";
-import svgLeft from "images/svg/svgexport-8.svg"
+import svgLeft from "images/svg/svgexport-8.svg";
 
 export default function Home() {
   return (
@@ -36,17 +36,23 @@ export default function Home() {
           <MyImages
             src={bgImage}
             width={"100%"}
-            className={"absolute -top-20 -z-10 w-full min-h-full"}
+            className={"absolute -top-24 -z-10 w-full min-h-full"}
           />
         </div>
 
         {/* The yellow floting section */}
         <Overlap />
 
-        <div className="relative bg-slate-800 w-full min-h-screen">
-          <MyImages src={lemonImage} fill className={"object-cover"} />
+        <div className="relative w-full min-h-screen">
+          {/* <MyImages src={lemonImage} fill className={"object-cover"} />
+           */}
 
-          <div className="w-[100%] min-h-screen px-8 py-6 absolute flex lg:flex-row sm:flex-col">
+          <MyImages
+            src={lemonImage}
+            fill
+            className={"absolute -z-10 -top-24 w-[100%] h-[120vh]"}
+          />
+          <div className="w-[100%] min-h-screen px-8 py-9 absolute flex lg:flex-row sm:flex-col">
             <div className="flex-1">
               <h1 className=" mb-0 w-full leading-14 text-offWhite text-7xl font-bold tracking-tighter">
                 This Peel is
@@ -55,7 +61,6 @@ export default function Home() {
             </div>
             <div className="flex-1 flex items-end justify-end ">
               <div className="flex flex-col justify-end items-end ">
-
                 <p className="w-1/2 mb-2 text-justify text-md leading-5 font-semibold text-offWhite">
                   Apeel keeps moisture inside the produce adn oxygen out,
                   dramatically slowing the rate that produce spoils. because we
@@ -67,11 +72,22 @@ export default function Home() {
                   href="/index"
                   className="w-1/2 flex items-center text-sm text-left leading-5 font-semibold text-offWhite"
                 >
-                  <p>How Apeel Works</p> <Image src={svgLeft} width={30}/>
+                  <p>How Apeel Works</p> <Image src={svgLeft} width={30} />
                 </Link>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-between text-my-green w-full min-h-screen rounded-md">
+          <div className="flex-1 p-12 rounded-lg bg-banana">
+            <h1 className="text-6xl w-100 font-extrabold">
+              Seeing is
+              <br /> believing.
+            </h1>
+          </div>
+
+          <div className="flex-1 bg-banana-400 py-6 h-screen flex justify-between gap-10 z-10"></div>
         </div>
       </main>
     </div>
