@@ -6,6 +6,7 @@ import Link from "next/link";
 import bgImage from "images/filters_quality(85).webp";
 import lemonImage from "images/filters_lemon(85).webp";
 import svgLeft from "images/svg/svgexport-8.svg";
+import avacardo from "images/filters_quality(85) (3).webp";
 
 export default function Home() {
   return (
@@ -79,15 +80,25 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-between text-my-green w-full min-h-screen rounded-md">
-          <div className="flex-1 p-12 rounded-lg bg-banana">
+        <div className="flex justify-between text-my-green w-full min-h-screen rounded-xl">
+          <div className="relative flex flex-1 p-12 rounded-l-lg bg-banana">
             <h1 className="text-6xl w-100 font-extrabold">
               Seeing is
               <br /> believing.
             </h1>
+            <div className="flex-1">
+            <Image src={avacardo} fill className="" />
+            </div>
           </div>
 
-          <div className="flex-1 bg-banana-400 py-6 h-screen flex justify-between gap-10 z-10"></div>
+          <div className="flex-1 relative rounded-r-lg bg-banana-400 py-6 h-screen flex justify-between gap-10 z-10">
+            <div className="relative flex-1 p-12">
+              <h1 className="text-6xl w-100 font-extrabold">.</h1>
+            </div>
+            <div className="flex-1">
+              <Image src={avacardo} fill className="" />
+            </div>
+          </div>
         </div>
       </main>
     </div>
