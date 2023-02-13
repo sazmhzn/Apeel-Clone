@@ -81,23 +81,26 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between text-my-green w-full min-h-screen rounded-xl">
-          <div className="relative flex flex-1 p-12 rounded-l-lg bg-banana">
+          <div className="relative flex lg:flex-col justify-between flex-1 p-12 rounded-l-lg bg-banana">
             <h1 className="text-6xl w-100 font-extrabold">
               Seeing is
               <br /> believing.
             </h1>
-            <div className="flex-1">
-            <Image src={avacardo} fill className="" />
-            </div>
-          </div>
 
-          <div className="flex-1 relative rounded-r-lg bg-banana-400 py-6 h-screen flex justify-between gap-10 z-10">
-            <div className="relative flex-1 p-12">
-              <h1 className="text-6xl w-100 font-extrabold">.</h1>
-            </div>
-            <div className="flex-1">
-              <Image src={avacardo} fill className="" />
-            </div>
+            {/* <div className="flex-1">
+            <Image src={avacardo} fill className="" />
+            </div> */}
+
+            <div className="text-center" >Without Apeel</div>
+          </div>
+          <div className="relative flex lg:flex-col justify-between flex-1 p-12 rounded-r-lg bg-banana-400">
+            <h1 className="text-6xl w-100 font-extrabold">
+             
+              .
+            </h1>
+
+    
+            <div className="text-center" >With Apeel</div>
           </div>
         </div>
       </main>
