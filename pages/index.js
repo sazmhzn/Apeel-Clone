@@ -81,7 +81,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between text-my-green w-full min-h-screen rounded-xl">
-          <div className="relative flex lg:flex-col justify-between flex-1 p-12 rounded-l-lg bg-banana">
+          <div className="relative flex lg:flex-col justify-between flex-1 p-12 rounded-l-lg bg-offWhite">
             <h1 className="text-6xl w-100 font-extrabold">
               Seeing is
               <br /> believing.
@@ -103,6 +103,9 @@ export default function Home() {
             <div className="text-center" >With Apeel</div>
           </div>
         </div>
+        <section className="bg-banana relative w-full min-h-screen">
+
+        </section>
       </main>
     </div>
   );
