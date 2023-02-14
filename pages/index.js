@@ -6,6 +6,7 @@ import Link from "next/link";
 import bgImage from "images/filters_quality(85).webp";
 import lemonImage from "images/filters_lemon(85).webp";
 import svgLeft from "images/svg/svgexport-8.svg";
+import leftLeaf from "images/svg/svgexport-5.svg";
 import avacardo from "images/filters_quality(85) (3).webp";
 
 export default function Home() {
@@ -91,20 +92,30 @@ export default function Home() {
             <Image src={avacardo} fill className="" />
             </div> */}
 
-            <div className="text-center" >Without Apeel</div>
+            <div className="text-center">Without Apeel</div>
           </div>
           <div className="relative flex lg:flex-col justify-between flex-1 p-12 rounded-r-lg bg-banana-400">
-            <h1 className="text-6xl w-100 font-extrabold">
-             
-              .
-            </h1>
+            <h1 className="text-6xl w-100 font-extrabold">.</h1>
 
-    
-            <div className="text-center" >With Apeel</div>
+            <div className="text-center">With Apeel</div>
           </div>
         </div>
-        <section className="bg-banana relative w-full min-h-screen">
-
+        <section className="px-8 bg-banana relative w-full min-h-screen overflow-y-hidden overflow-x-scroll scrollbar-hide">
+        {/* <Image src={leftLeaf} fill className=" absolute w-100 right-48" /> */}
+          <div className="flex items-center">
+            <div className="flex flex-col justify-between text-my-green flex-1 min-h-screen rounded-xl">
+              <h1 className="flex-1 flex items-center justify-center text-7xl font-extrabold">
+                Produce you <br/> love, protected by Apeel.
+              </h1>
+              <p>
+                Discover our products, available in North America and Europe.
+              </p>
+            </div>
+            
+            <div className="flex-1">
+            </div>
+          </div>
+          
         </section>
       </main>
     </div>
