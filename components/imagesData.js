@@ -1,6 +1,6 @@
 
 export default {
-  "success": "true",
+    "success": true,
   "data": [
     {
       "name": "Avocados",

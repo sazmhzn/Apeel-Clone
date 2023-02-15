@@ -8,6 +8,7 @@ import lemonImage from "images/filters_lemon(85).webp";
 import svgLeft from "images/svg/svgexport-8.svg";
 import leftLeaf from "images/svg/svgexport-5.svg";
 import avacardo from "images/filters_quality(85) (3).webp";
+import AllImages from "@/components/AllImages";
 
 export default function Home() {
   return (
@@ -113,6 +114,7 @@ export default function Home() {
             </div>
             
             <div className="flex-1">
+              <AllImages />
             </div>
           </div>
           
