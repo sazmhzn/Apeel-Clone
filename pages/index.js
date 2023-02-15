@@ -7,7 +7,6 @@ import bgImage from "images/filters_quality(85).webp";
 import lemonImage from "images/filters_lemon(85).webp";
 import svgLeft from "images/svg/svgexport-8.svg";
 import leftLeaf from "images/svg/svgexport-5.svg";
-import avacardo from "images/filters_quality(85) (3).webp";
 import AllImages from "@/components/AllImages";
 
 export default function Home() {
@@ -101,7 +100,7 @@ export default function Home() {
             <div className="text-center">With Apeel</div>
           </div>
         </div>
-        <section className="px-8 bg-banana relative w-full min-h-screen overflow-y-hidden overflow-x-scroll scrollbar-hide">
+        <section className="px-8 bg-banana relative min-w-full min-h-screen overflow-y-hidden overflow-x-scroll">
         {/* <Image src={leftLeaf} fill className=" absolute w-100 right-48" /> */}
           <div className="flex items-center">
             <div className="flex flex-col justify-between text-my-green flex-1 min-h-screen rounded-xl">
@@ -113,7 +112,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="flex-1">
+            <div className="flex-2">
               <AllImages />
             </div>
           </div>

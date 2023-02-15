@@ -10,14 +10,14 @@ export default function AllImages() {
   const scrollImages = imagesData.map(img => (
     <Product 
         name={img.name}
-        src={img.src}
+        src={'/images/Avacado.webp'}
         country={img.country}
     />
   ))
 
   return (
-    <>
+    <div className='w-auto flex'>
       {scrollImages}
-    </>
+    </div>
   );
 }
