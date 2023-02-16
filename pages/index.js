@@ -7,9 +7,18 @@ import bgImage from "images/filters_quality(85).webp";
 import lemonImage from "images/filters_lemon(85).webp";
 import svgLeft from "images/svg/svgexport-8.svg";
 import leftLeaf from "images/svg/svgexport-5.svg";
+import forest from "images/filters_quality(85) (2).webp";
 import AllImages from "@/components/AllImages";
+import { useState } from "react";
 
 export default function Home() {
+  
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const handleScroll = (e) => {
+    setScrollTop(e.currentTarget.scrollTop);
+  }
+
   return (
     <div>
       <Head>
@@ -100,24 +109,57 @@ export default function Home() {
             <div className="text-center">With Apeel</div>
           </div>
         </div>
-        <section className="px-8 bg-banana relative min-w-full min-h-screen overflow-y-hidden overflow-x-scroll">
-        {/* <Image src={leftLeaf} fill className=" absolute w-100 right-48" /> */}
+        <section
+          onScroll={handleScroll}
+          className="scrolling-wrapper  px-8 bg-banana relative min-w-full min-h-screen overflow-y-hidden overflow-x-scroll"
+        >
+          {/* <Image src={leftLeaf} fill className=" absolute w-100 right-48" /> */}
           <div className="flex items-center">
             <div className="flex flex-col justify-between text-my-green flex-1 min-h-screen rounded-xl">
               <h1 className="flex-1 flex items-center justify-center text-7xl font-extrabold">
-                Produce you <br/> love, protected by Apeel.
+                Produce you <br /> love, protected by Apeel.
               </h1>
               <p>
                 Discover our products, available in North America and Europe.
               </p>
             </div>
-            
+
             <div className="flex-2">
               <AllImages />
             </div>
           </div>
-          
         </section>
+
+        <div className="relative w-full min-h-screen">
+          {/* <MyImages src={lemonImage} fill className={"object-cover"} />
+           */}
+
+          <MyImages
+            src={forest}
+            fill
+            className={"absolute -z-10 -top-24 w-[100%] h-[120vh]"}
+          />
+          <div className="w-[100%] min-h-screen px-8 py-9 flex">
+            <div className=" flex-1 flex items-end justify-end ">
+              <div className="flex flex-col justify-end items-end ">
+              <h1 className="mb-8 w-2/3 leading-14 text-offWhite text-4xl font-bold tracking-tighter">
+                See the sustainability impact of
+                <br /> Apeel-Protected Produce.
+              </h1>
+                <p className="mb-8 w-2/3 mb-2 text-justify text-md leading-5 font-semibold text-offWhite">
+                  Learn more about how preventing food waster helps to conserve resources and avoid greenhouse gas emissions.
+                </p>
+
+                <Link
+                  href="/index"
+                  className="mb-8 w-2/3 flex items-center text-sm text-left leading-5 font-semibold text-offWhite"
+                >
+                  <p>Our Impact</p> <Image src={svgLeft} width={30} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
