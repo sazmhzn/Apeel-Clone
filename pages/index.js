@@ -13,12 +13,11 @@ import AllImages from "@/components/AllImages";
 import { useState } from "react";
 
 export default function Home() {
-  
   const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = (e) => {
     setScrollTop(e.currentTarget.scrollTop);
-  }
+  };
 
   return (
     <div>
@@ -143,12 +142,13 @@ export default function Home() {
           <div className="w-[100%] min-h-screen px-8 py-9 flex">
             <div className=" flex-1 flex items-end justify-end ">
               <div className="flex flex-col justify-end items-end ">
-              <h1 className="mb-8 w-2/3 leading-14 text-offWhite text-4xl font-bold tracking-tighter">
-                See the sustainability impact of
-                <br /> Apeel-Protected Produce.
-              </h1>
+                <h1 className="mb-8 w-2/3 leading-14 text-offWhite text-4xl font-bold tracking-tighter">
+                  See the sustainability impact of
+                  <br /> Apeel-Protected Produce.
+                </h1>
                 <p className="mb-8 w-2/3 mb-2 text-justify text-md leading-5 font-semibold text-offWhite">
-                  Learn more about how preventing food waster helps to conserve resources and avoid greenhouse gas emissions.
+                  Learn more about how preventing food waster helps to conserve
+                  resources and avoid greenhouse gas emissions.
                 </p>
 
                 <Link
@@ -162,10 +162,38 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="min-h-[90vh] w-full bg-slate-300">
-           <div className="flex">
-            <Image src={}/> 
-           </div>
+        <div className="overflow-hidden min-h-[90vh] w-full bg-cilantro">
+          <div className="flex">
+            <div className="relative flex-1 bg-violet-400">
+              <MyImages
+                src={greenLemon}
+                
+                className="w-full min-h-screen"
+              />
+            </div>
+
+            <div className="flex-1 p-5 text-banana-400 flex flex-col item-start justify-between">
+              <div>
+                <p>
+                  Let's do good
+                  <br />
+                  together.
+                </p>
+              </div>
+              <div>
+                <h1 className=" text-banana-400  mb-2 w-2/3 leading-14 text-offWhite text-4xl font-bold tracking-tighter">
+                  Apeel gives the entire supply chain more time. That's better
+                  for your business, your customers, and our planet.
+                </h1>
+                <Link
+                  href="/index"
+                  className="mb-8 w-2/3 flex items-center text-sm text-left leading-5 font-semibold text-offWhite"
+                >
+                  <p className="text-banana-400">More about Retail.</p> <Image src={svgLeft} width={30} />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
