@@ -8,6 +8,7 @@ import lemonImage from "images/filters_lemon(85).webp";
 import svgLeft from "images/svg/svgexport-8.svg";
 import leftLeaf from "images/svg/svgexport-5.svg";
 import forest from "images/filters_quality(85) (2).webp";
+import greenLemon from "images/filters_quality(85) (20).webp";
 import AllImages from "@/components/AllImages";
 import { useState } from "react";
 
@@ -159,6 +160,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="min-h-[90vh] w-full bg-slate-300">
+           <div className="flex">
+            <Image src={}/> 
+           </div>
         </div>
       </main>
     </div>
