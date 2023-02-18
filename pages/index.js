@@ -197,7 +197,15 @@ export default function Home() {
         </div>
 
         <div>
-          
+          <div>
+            <h1>Step inside the wordl <br />
+              of Apeel.
+            </h1>
+          </div>
+          {/* slider images */}
+          <div>
+            {/* componenets gies here */}
+          </div>
         </div>
       </main>
     </div>
