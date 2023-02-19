@@ -199,8 +199,8 @@ export default function Home() {
 
         <div>
           <div>
-            <h1>
-              Step inside the wordl <br />
+            <h1 className=" mb-6 w-4/6 leading-14 text-cilantro text-5xl font-bold tracking-tighter">
+              Step inside the world <br />
               of Apeel.
             </h1>
           </div>
