@@ -12,7 +12,7 @@ export default {
     {
       "name": "English Cucumbers",
       "country": "North America",
-      "src": "/images/Avacado.webp",
+      "src": "/images/OrangePeel.webp",
     },
   
   ],

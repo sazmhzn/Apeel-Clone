@@ -7,10 +7,12 @@ export default function AllImages() {
     const [imagesData, setImagesData] = React.useState(images.data);
 
     console.log(imagesData)
+    console.log(imagesData.src)
   const scrollImages = imagesData.map(img => (
+    
     <Product 
         name={img.name}
-        src={'/images/Avacado.webp'}
+        src={img.src}
         country={img.country}
     />
   ))

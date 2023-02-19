@@ -1,5 +1,4 @@
 import Image from "next/image";
-import avacado from "/images/Avacado.webp";
 
 export default function Product(props) {
   console.log(props.src);
