@@ -167,29 +167,30 @@ export default function Home() {
             <div className="relative flex-1 bg-violet-400">
               <MyImages
                 src={greenLemon}
-                
-                className="w-full min-h-screen"
+                className="w-full min-h-screen object-cover"
               />
             </div>
 
-            <div className="flex-1 p-5 text-banana-400 flex flex-col item-start justify-between">
-              <div>
-                <p>
-                  Let's do good
-                  <br />
-                  together.
-                </p>
-              </div>
-              <div>
-                <h1 className=" text-banana-400  mb-2 w-2/3 leading-14 text-offWhite text-4xl font-bold tracking-tighter">
-                  Apeel gives the entire supply chain more time. That's better
-                  for your business, your customers, and our planet.
+            <div className="flex-1 text-banana-400 flex flex-col items-center">
+              <div className=" h-full flex flex-col justify-between">
+                <div className="flex-1">
+                  <p className="w-full pt-4">
+                    Let's do good
+                    <br />
+                    together.
+                  </p>
+                </div>
+                <h1 className="mx-auto text-banana-400 w-max mb-2 leading-14 text-offWhite text-6xl font-bold tracking-tighter">
+                  Apeel gives the entire <br /> supply chain more <br /> time.
+                  That's better for <br /> your business, your <br /> customers,
+                  and our <br /> planet.
                 </h1>
                 <Link
                   href="/index"
                   className="mb-8 w-2/3 flex items-center text-sm text-left leading-5 font-semibold text-offWhite"
                 >
-                  <p className="text-banana-400">More about Retail.</p> <Image src={svgLeft} width={30} />
+                  <p className="text-banana-400">More about Retail.</p>{" "}
+                  <Image src={svgLeft} width={30} />
                 </Link>
               </div>
             </div>
@@ -198,14 +199,13 @@ export default function Home() {
 
         <div>
           <div>
-            <h1>Step inside the wordl <br />
+            <h1>
+              Step inside the wordl <br />
               of Apeel.
             </h1>
           </div>
           {/* slider images */}
-          <div>
-            {/* componenets gies here */}
-          </div>
+          <div>{/* componenets gies here */}</div>
         </div>
       </main>
     </div>
