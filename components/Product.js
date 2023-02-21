@@ -5,7 +5,7 @@ export default function Product(props) {
   return (
     <div>
       <div className="imageContainer">
-        <Image src={props.src} alt="hello" width={500} height={100} />
+        <Image src={"/images/Apple.webp"} alt="hello" width={500} height={100} />
       </div>
       <div className="name">
         <h1>{props.name}</h1>

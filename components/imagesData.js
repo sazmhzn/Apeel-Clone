@@ -1,5 +1,3 @@
-import leftLeaf from "images/svg/svgexport-5.svg";
-import avacado from "/images/Avacado.webp";
 
 export default {
     "success": true,
@@ -7,7 +5,7 @@ export default {
     {
       "name": "Avocados",
       "country": "North America & Europe",
-      "src": "/OrangePeel.webp",
+      "src": "/Apple.webp",
     },
     {
       "name": "English Cucumbers",

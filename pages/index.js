@@ -208,6 +208,13 @@ export default function Home() {
           <div>{/* componenets gies here */}</div>
         </div>
       </main>
+
+      {/* footer main div */}
+      {/* 3 flex */}
+      {/* frist flex input */}
+      {/* frist links input */}
+      {/* frist small link input */}
+      {/* secrion */}
     </div>
   );
 }
